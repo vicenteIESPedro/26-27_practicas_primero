@@ -8,7 +8,7 @@ La estructura inicial del repositorio es:
 ### PASOS A SEGUIR PARA LA PUESTA EN MARCHA Y DEPURACIÓN ###
 1. Crear en nuestro github propio un Fork de este repositorio
 2. Clonar el repositorio localmente en nuestro ordenador.  
-```git clone ruta_repositorio```
+```git clone ruta_vuestro_repositorio```
 3. Añadir una configuración de depuración para PHP
 Se debe configurar para que enlace xDebug con el contenedor.Para ello, modificar el archivo para que quede:
 ```
