@@ -10,7 +10,7 @@ La estructura inicial del repositorio es:
 2. Clonar el repositorio localmente en nuestro ordenador.  
 ```git clone ruta_vuestro_repositorio```
 3. Añadir una configuración de depuración para PHP  
-Se debe configurar para que enlace xDebug con el contenedor.
+Se debe configurar para que enlace xDebug con el contenedor.  
 Para ello, modificar el archivo para que quede:  
 ```
     {
@@ -25,7 +25,7 @@ Para ello, modificar el archivo para que quede:
 ```
 OJO: Para que funcione la depuración, debemos abrir en Visual Studio la carpeta base. ${workspaceRoot} hace referencia a la carpeta que hemos abierto en Visual Studio. Si vamos a usar otra estructura, debemos cambiar la línea para que haga correctamente el enlace.  
   
-4. Depurar el código.
+4. Depurar el código.  
 Desde una terminal ejecutar el siguiente comando que activa el contenedor.  
-```docker compose -f docker-compose.yml up```
-   
+```docker compose -f docker-compose.yml up```  
+A partir de aquí se activará la depuración en visual basic y procedemos a depurar.   
