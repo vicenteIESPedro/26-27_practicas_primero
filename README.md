@@ -4,7 +4,7 @@ Para el desarrollo/depuración de las mismas se usará un contenedor docker prec
 La estructura inicial del repositorio es:  
 * ./web: Raíz del sitio
 * docker-compose.yml: Fichero para la generación del contenedor (solo PHP).
-* docker-compose-bd.yml: Fichero para la generación del contenador (PHP-MySql- phpmyadmin)
+* docker-compose-bd.yml: Fichero para la generación del contenedor (PHP-MySql- phpmyadmin)
 
 ### PASOS A SEGUIR PARA LA PUESTA EN MARCHA Y DEPURACIÓN ###
 1. Crear en nuestro github propio un Fork de este repositorio
