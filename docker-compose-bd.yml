@@ -1,11 +1,12 @@
 services:
   bd:
     image: mysql
-    #environment:
-      # MYSQL_DATABASE: definidos en el archivo .env
-      # MYSQL_USER:     creo .env-copia que se debe renombrar a .env
-      # MYSQL_PASSWORD: 
-      # MYSQL_ROOT_PASSWORD: 
+    # environment:
+      # definidos en el archivo .env Creo .env-copia que se debe renombrar a .env
+      # MYSQL_DATABASE: prueba 
+      # MYSQL_USER:     2daw
+      # MYSQL_PASSWORD: 2daw
+      # MYSQL_ROOT_PASSWORD: 2daw
     env_file:
       - .env
     volumes:
@@ -21,6 +22,8 @@ services:
       - type: bind
         source: ./web
         target: /var/www/html
+    env_file:
+      - .env
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:
