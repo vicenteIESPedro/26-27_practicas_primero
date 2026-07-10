@@ -1,11 +1,13 @@
 services:
   bd:
     image: mysql
-    environment:
-      MYSQL_DATABASE: "prueba"
-      MYSQL_USER: "2daw"
-      MYSQL_PASSWORD: "2daw"
-      MYSQL_ROOT_PASSWORD: "2daw"
+    #environment:
+      # MYSQL_DATABASE: definidos en el archivo .env
+      # MYSQL_USER:     creo .env-copia que se debe renombrar a .env
+      # MYSQL_PASSWORD: 
+      # MYSQL_ROOT_PASSWORD: 
+    env_file:
+      - .env
     volumes:
       - mysql-data:/var/lib/mysql
     ports:
