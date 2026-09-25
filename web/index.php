@@ -22,6 +22,6 @@ function cuerpo()
 {
 ?>
     <br><br>
-    Hola, estás en Index.php
+    Hola, estás en Index.php Soy Raulillo el pillo
 <?php
 }
