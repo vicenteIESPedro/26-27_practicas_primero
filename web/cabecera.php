@@ -24,4 +24,3 @@ spl_autoload_register(function ($clase){
 
 include(RUTABASE."/aplicacion/plantilla/plantilla.php");
 
-//creo todos los objetos que necesita mi aplicación
