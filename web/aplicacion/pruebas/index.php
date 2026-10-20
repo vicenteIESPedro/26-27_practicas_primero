@@ -12,6 +12,9 @@ $barra=[
      ],  
 ];
 
+
+
+
 //dibuja la plantilla de la vista
 inicioCabecera("APLICACION PRIMER TRIMESTRE");
 cabecera();
@@ -34,5 +37,7 @@ function cuerpo()
     <a href="pasopar.php">Comunicacion controlador-vista</a><br>
     <a href="array.php">Array</a><br>
     <a href="cadenas.php">Cadenas</a><br>
+    <a href="expresiones_regulares.php">Expresiones regulares</a><br>
+    <a href="index_funciones.php">funciones</a><br>
 <?php
 }
