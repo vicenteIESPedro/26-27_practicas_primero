@@ -68,6 +68,7 @@ function inicioCuerpo($cabecera, array $barraUbi=[])
                 <ul>
                     <li><a href="/aplicacion/pruebas/index.php">Ej Basicos</a></li>
                     <li><a href="/aplicacion/relacion1/index.php">Rel 1</a></li>
+                    <li><a href="/aplicacion/relacion2/index.php">Rel-2</a></li>
                  </ul> 
                 
             </div>
