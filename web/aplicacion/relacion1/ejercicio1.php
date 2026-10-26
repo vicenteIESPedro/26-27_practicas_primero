@@ -6,7 +6,7 @@ include_once(dirname(__FILE__) . "/../../cabecera.php");
 /**
  * Cada elemento es un array de dos posiciones asociativas
  * TEXTO: testo a mostrar en el elemento
- * LINK: Enlace a la pagina. Si esta vaciono tiene enlace
+ * LINK: LINK a la pagina. Si esta vaciono tiene LINK
  */
 $barraUbi = [
     [

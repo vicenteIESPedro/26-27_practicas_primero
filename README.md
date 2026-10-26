@@ -12,7 +12,7 @@ La estructura inicial del repositorio es:
 ```git clone ruta_vuestro_repositorio```  
   
 3. Añadir una configuración de depuración para PHP  
-Se debe configurar para que enlace xDebug con el contenedor.  
+Se debe configurar para que LINK xDebug con el contenedor.  
 Para ello, modificar el archivo para que quede:  
 ```
     {
@@ -25,7 +25,7 @@ Para ello, modificar el archivo para que quede:
             }
         },
 ```
-OJO: Para que funcione la depuración, debemos abrir en Visual Studio la carpeta base. ${workspaceRoot} hace referencia a la carpeta que hemos abierto en Visual Studio. Si vamos a usar otra estructura, debemos cambiar la línea para que haga correctamente el enlace.  
+OJO: Para que funcione la depuración, debemos abrir en Visual Studio la carpeta base. ${workspaceRoot} hace referencia a la carpeta que hemos abierto en Visual Studio. Si vamos a usar otra estructura, debemos cambiar la línea para que haga correctamente el LINK.  
   
 4. Depurar el código.
 He creado dos ficheros Docker-compose. Uno solo con PHP (docker-compose.yml) y otro con PHP-mysql-phpmyadmin(docker-compose-bd).
