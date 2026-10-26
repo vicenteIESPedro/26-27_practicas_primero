@@ -12,11 +12,11 @@ include_once ("./mis_funciones.php");
 $barra=[
      [
        "TEXTO"=> "inicio",
-       "ENLACE" =>"/index.php",
+       "LINK" =>"/index.php",
      ],
        [ 
        "TEXTO"=> "pruebas",   
-       "ENLACE" =>"/aplicacion/pruebas/index.php",
+       "LINK" =>"/aplicacion/pruebas/index.php",
      ], 
        [ 
        "TEXTO"=> "eje. funciones",   
@@ -36,6 +36,58 @@ if (!$numero=doble($numero))
     {
         exit;
     }
+
+
+$numero=variosParametros(25,"2aaa8769",56);
+
+$numero=variosParametros(25,"2");
+
+$numero=variosParametros(25,par3:100);
+
+$numero=variosParametros(25,"2aaa8769",56,23,56,89,24);
+
+
+$numero=suma(1,2,3,4,5,6,7,8,9,10);
+$numero=suma1(1,2,3,4,5,6,7,8,9,10);
+
+$r=[5,6,2,4,9,1,3];
+$numero=suma(1,2,...$r); //rellenamos $a y $b y pasamos el resto
+
+$numero=suma(...$r);  //pasamos todos los parametros de forma que
+//el 5 es $a y el 6 $b .....
+
+
+$n1=15;
+$otra="n1";
+
+//variable-variable
+$numero=$$otra;
+
+//variable funcion
+$otra="suma";
+$numero=$otra(1,2,3,4);
+
+//funciones anonimas
+$func= function (float $a, float $b, float ...$resto): float
+{
+    $res = $a + $b;
+    foreach ($resto as $num)
+        $res += $num;
+    return $res;
+};
+
+$numero=$func(1,2,3,4);
+
+$s=function (int $a, int $b){
+  return $a+$b;
+};
+
+$numero=$s(3,20);
+
+$s=fn(int $a,int $b)=>$a+$b+$numero;
+$numero=$s(29,20);
+
+$numero=$s(29,20);
 
 
 //dibuja la plantilla de la vista

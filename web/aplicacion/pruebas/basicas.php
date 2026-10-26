@@ -9,11 +9,11 @@ const NUME1=56;
 $barra=[
      [
        "TEXTO"=> "inicio",
-       "ENLACE" =>"/index.php",
+       "LINK" =>"/index.php",
      ],
        [ 
        "TEXTO"=> "pruebas",   
-       "ENLACE" =>"/aplicacion/pruebas/index.php",
+       "LINK" =>"/aplicacion/pruebas/index.php",
      ], 
        [ 
        "TEXTO"=> "eje. basicos",   
