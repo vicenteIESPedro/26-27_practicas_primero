@@ -1,0 +1,52 @@
+<?php
+include_once(dirname(__FILE__) . "/../../cabecera.php");
+
+$barraUbi = [
+    [
+        "TEXTO" => "Inicio",
+        "LINK" => "/index.php"
+    ],
+    [
+        "TEXTO" => "Relacion2",
+        "LINK" => "/aplicacion/relacion2"
+    ],
+    [
+        "TEXTO" => "Ejercicio4",
+        "LINK" => "/aplicacion/relacion2/ejercicio4.php"
+    ]
+];
+
+// *****************CONTROLADOR**************************
+
+$valor1 = 17.5;
+$valor2 = 379987.24;
+
+$datos = ['valor1' => $valor1, 'valor2' => $valor2];
+
+inicioCabecera("2DAW APLICACION");
+cabecera();
+finCabecera();
+
+inicioCuerpo("2DAW APLICACION", $barraUbi);
+cuerpo($datos);
+finCuerpo();
+
+// **********************************************************
+
+function cabecera() {}
+
+
+function cuerpo(array $datos)
+{
+?>
+    <h1>Ejercicio 4:</h1>
+
+<?php
+    echo '-'.str_pad(number_format($datos['valor1'], 1, ",","."), 15, 0, STR_PAD_LEFT).'-';
+    echo "<br/>".PHP_EOL;
+    $numero=number_format($datos['valor2'], 2, ",", ".");
+    //formateo rellenando con espacios en blanco html (&nbsp;)
+    echo '-'.str_repeat('&nbsp;',15-mb_strlen($numero)).$numero.'-'.PHP_EOL;
+    //mal con str_pad
+    echo '-'.str_pad($numero,15,'&nbsp;', STR_PAD_LEFT).'-'.PHP_EOL;
+}
