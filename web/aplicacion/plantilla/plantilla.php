@@ -71,7 +71,8 @@ function inicioCuerpo($cabecera, array $barraUbi=[])
                     <li><a href="/aplicacion/relacion2/index.php">Rel-2</a></li>
                     <li><a href="/aplicacion/relacion3/index.php">Rel-3</a></li>
                     <li><a href="/aplicacion/relacion4/index.php">Rel-4</a></li>
-                 </ul> 
+                    <li><a href="/aplicacion/relacion5/index.php">Rel-5</a></li>
+                </ul> 
                 
             </div>
             <div id="barraUbicacion"><?php

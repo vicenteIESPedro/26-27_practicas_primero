@@ -123,6 +123,7 @@ function cuerpo()
 /**
  * Clase de prueba en la que se comprueban las propiedades y metodos
  */
+#[\AllowDynamicProperties]  //para evitar warning de deprecated
 class ClasePrueba
 {
     //definición de constantes
