@@ -1,0 +1,16 @@
+100;100;black;1
+300;200;blue;3
+150;150;blue;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+150;150;bluelight;3
+100;400;yellow;4
