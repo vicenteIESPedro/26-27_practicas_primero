@@ -29,6 +29,16 @@ spl_autoload_register(function ($clase){
 });
 
 include(RUTABASE."/aplicacion/plantilla/plantilla.php");
+include_once(RUTABASE."/scripts/librerias/funcionesVarias.php");
+include_once(RUTABASE."/aplicacion/relacion7/funcionesRelacion7.php");
 
 
 //creo todos los objetos que necesita mi aplicación
+
+//defino el array de Puntos
+$Puntos=[];
+//genero el nombre para el fichero de puntos
+$nombreFicheroPuntos=generarNombreFicheroPuntos($_SERVER['REMOTE_ADDR'], $_SERVER['HTTP_USER_AGENT']);
+
+// Cargar puntos desde fichero (crear si no existe)
+cargaInicialDePuntos($nombreFicheroPuntos,$Puntos);
