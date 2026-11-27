@@ -41,5 +41,7 @@ services:
 
 volumes:
   mysql-data:
-
+    #si queremos un volumen independiente de la compilación en la que esté
+    #external: true
+    #name: "curso2026" 
 
